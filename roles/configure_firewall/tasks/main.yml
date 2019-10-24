@@ -5,7 +5,7 @@
   yum:
     name: "{{ item }}"
     state: latest
-  with_items: "{{ security_packages }"
+  with_items: "{{ security_packages }}"
 
 - name: firewalld enabled and running
   service:
