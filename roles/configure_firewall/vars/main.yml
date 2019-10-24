@@ -6,6 +6,7 @@ services_to_enable:
 security_packages:
   - "httpd"
   - "nmap"
+  - "firewalld"
 
 firewall_services:
   - "http"
