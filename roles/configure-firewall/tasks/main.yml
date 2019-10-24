@@ -12,7 +12,7 @@
     name: "{{ item }}"
     enabled: true
     state: started
-  with_items: services_to_enable
+  with_items: "{{ services_to_enable }}"
 
 - name: Configure firewalld
   firewalld:
@@ -20,4 +20,4 @@
     permanent: true
     state: enabled
     immediate: true
-  with_items: firewall_services
+  with_items: "{{ firewall_services }}"
