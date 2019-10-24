@@ -5,7 +5,6 @@ services_to_enable:
 
 security_packages:
   - "httpd"
-  - "cowsay"
   - "nmap"
 
 firewall_services:
