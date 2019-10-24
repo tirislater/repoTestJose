@@ -8,6 +8,12 @@
   - name: Configure firewall
     include_role:
       name: configure_firewall
+  - name: Configure security
+    include_role:
+      name: security_hardening
+  - name: Configure motd
+    include_role:
+      name: set_motd
   - name: Check if EPEL repo is already configured.
     stat:
       path: "/etc/yum.repos.d/epel.repo"
