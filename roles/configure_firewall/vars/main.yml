@@ -2,6 +2,7 @@
 # vars file for configure-firewall
 services_to_enable:
   - "httpd"
+  - "firewalld"
 
 security_packages:
   - "httpd"
